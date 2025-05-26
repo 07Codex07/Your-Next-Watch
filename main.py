@@ -16,6 +16,8 @@ def fetch_poster(movie_id):
     return "https://via.placeholder.com/300x450?text=No+Image"
 
 # --- Recommend movies ---
+pickle.load(open('PycharmProjects/helloWorld/Streamlit Dashboard/similar.pkl', 'rb'))
+
 def recommend(movie):
     index = movies[movies['title'] == movie].index[0]
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
