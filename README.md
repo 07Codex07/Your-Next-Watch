@@ -15,8 +15,6 @@ A Streamlit-powered movie recommendation dashboard that suggests your next best 
 - NLP: TF-IDF, cosine similarity
 - Git + GitHub
 
-## 📊 Demo
-[Insert screenshot or Streamlit Cloud link here]
 
 ## 🔧 How to Run Locally
 
@@ -28,7 +26,7 @@ cd Your-Next-Watch
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. (Optional) Pull LFS files if used
+# 3. (Optional) Pull LFS files 
 git lfs pull
 
 # 4. Run the Streamlit app
