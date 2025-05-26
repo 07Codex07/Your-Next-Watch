@@ -36,7 +36,7 @@ st.set_page_config(page_title="Movie Recommender", layout="wide")
 st.title('🎬 Movie Recommender System')
 
 # Load from correct file
-movies_dict = pickle.load(open('PycharmProjects/helloWorld/Streamlit Dashboard/similar.pkl', 'rb'))
+movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('PycharmProjects/helloWorld/Streamlit Dashboard/similar.pkl', 'rb'))
 
