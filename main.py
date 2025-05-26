@@ -16,7 +16,7 @@ def fetch_poster(movie_id):
     return "https://via.placeholder.com/300x450?text=No+Image"
 
 # --- Recommend movies ---
-pickle.load(open('PycharmProjects/helloWorld/Streamlit Dashboard/similar.pkl', 'rb'))
+
 
 def recommend(movie):
     index = movies[movies['title'] == movie].index[0]
@@ -36,9 +36,9 @@ st.set_page_config(page_title="Movie Recommender", layout="wide")
 st.title('🎬 Movie Recommender System')
 
 # Load from correct file
-movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
+movies_dict = pickle.load(open('PycharmProjects/helloWorld/Streamlit Dashboard/similar.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open('similar.pkl', 'rb'))
+similarity = pickle.load(open('PycharmProjects/helloWorld/Streamlit Dashboard/similar.pkl', 'rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
